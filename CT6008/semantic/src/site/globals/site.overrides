@@ -1,0 +1,720 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.vw_black {
+	background-color: @vw_black !important;
+}
+
+.ui.vw_pink {
+	background-color: @vw_pink !important;
+}
+
+.ui.vw_blue {
+	background-color: @vw_blue !important;
+}
+
+.ui.vw_light_blue {
+	background-color: @vw_light_blue !important;
+}
+
+.ui.vw_yellow {
+	background-color: @vw_yellow !important;
+}
+
+.ui.vw_grey {
+  background-color: @vw_grey !important;
+}
+
+.ui.vw_white {
+  background-color: @vw_white !important;
+}
+
+.ui.active-header { 
+  border-bottom: 3px solid @vw_yellow !important; 
+  color: @vw_yellow !important;
+}
+
+.ui.hidden.menu {
+  display: none !important;
+}
+.ui.masthead.segment {
+  min-height: 500px;
+  padding-top: 1em !important;
+  background-color: @vw_blue2 !important;
+}
+
+#first-panel {
+  margin-top: 900px;
+  // border-top: 3px solid @vw_pink;
+  // .shadow(0px -5px 20px 0px @vw_pink2);  
+  .button {
+    color: @vw_white !important;
+  }
+
+  &.team {
+    margin-top: 41% !important;
+  }
+}
+
+.ui.segment {
+	min-height: 500px !important;
+	z-index: 100 !important;
+}
+
+div #top-menu {
+  z-index: 99999 !important;
+  background-color: @vw_pink !important;
+  border: 1px solid @vw_pink2;
+  -webkit-box-shadow: 0px 0px 100px @vw_pink2;
+  -moz-box-shadow: 0px 0px 100px @vw_pink2;
+  box-shadow: 0px 0px 100px @vw_pink2;
+
+  a:nth-child(1),
+  a:nth-child(2),
+  a:nth-child(3),
+  a:nth-child(4) {
+    top: 0em !important;
+    color: @vw_white !important; 
+    font-weight: 600 !important; 
+
+    &:hover {
+      color: @vw_grey !important;
+    }
+
+    &:active {
+      color: @vw_blue2 !important;
+    }
+  }
+}
+
+.second_section_bar {
+  z-index: 99999 !important;
+  background-color: @vw_light_blue !important;
+  border: 1px solid @vw_light_blue;
+  -webkit-box-shadow: 0px 0px 100px @vw_light_blue;
+  -moz-box-shadow: 0px 0px 100px @vw_light_blue;
+  box-shadow: 0px 0px 100px @vw_light_blue;
+  width: 100% !important;
+  min-height: 60px !important; 
+}
+
+#secondSection {
+  .ui.grid {
+    left: 60px;
+    top: 0px;
+    position: absolute;
+  }
+  background-color: #000;
+}
+
+div.ui.large.top.fixed.menu {
+  z-index: 99999 !important;
+  background-color: @vw_yellow !important;
+  border: 1px solid @vw_yellow;
+  -webkit-box-shadow: 0px 0px 100px @vw_yellow;
+  -moz-box-shadow: 0px 0px 100px @vw_yellow;
+  box-shadow: 0px 0px 100px @vw_yellow;
+}
+
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em !important;
+}
+.masthead h1.ui {
+  margin-top: 2em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+.ui.vertical.stripe {
+  padding: 5em 0em;
+  background-color: @vw_blue2 !important;
+  color: @vw_white !important;
+
+  div {
+    z-index: 110 !important;
+  }
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+
+#second_section_video {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto  !important;
+  min-height: auto;
+  object-position: center bottom;
+  object-fit: inherit;
+}
+
+@media only screen and (max-width: 700px) {
+
+  // .ui.fixed.menu {
+  //   display: none !important;
+  // }
+  // .secondary.pointing.menu .item,
+  // .secondary.pointing.menu .menu {
+  //   display: none !important;
+  // }
+  
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+
+}
+
+body {
+  margin: 0;
+}
+.parallax-container {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  min-height: 1000px;
+  z-index: -999 !important;
+}
+.parallax-layer {
+  width: 68px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.parallax-layer-building {
+  width: 68px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 200 !important;
+}
+
+.team-layer-0 {
+    top: 0px;
+    background-image: url('../../img/team.jpg');
+    opacity : 0.3 !important;
+    background-position: top center;
+    background-size: 100%;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100% !important;
+}
+
+.team-layer-1 {
+    top: 8em;
+    background-size: 10% !important;
+    background-image: url('../../img/logo.png');  
+}
+
+.ui.vertical.segment h1,
+.ui.vertical.segment h2,
+.ui.vertical.segment h3,
+.ui.vertical.segment h4,
+.ui.vertical.segment h5,
+.ui.vertical.segment p{
+  color: @vw_white;
+}
+
+h1, h2, h3, h4, h5, p, a, th, td, span {
+  font-family: 'Montserrat', sans-serif !important;
+  color: @vw_white !important;
+}
+
+body {
+  background-color: @vw_blue2 !important;
+}
+
+.ui.header {
+  padding: 1em 0.7em !important;
+  margin-top: 3em !important;
+  margin-bottom: 0em !important;
+  
+  &:nth-child(1) { 
+    background-color: @vw_pink;
+    color: @vw_white;
+  }
+
+  &.leaderboard {
+    background-color: @vw_pink !important;
+    color: @vw_white !important;
+  }
+}
+.ui.icon.header {
+  background-color: transparent !important;
+}
+
+.team-page {
+  background-color: @vw_blue2 !important;
+  border-top: 3px solid @vw_pink;
+  .shadow(0px -5px 20px 0px @vw_pink2);
+  .row {
+    margin-top: 1em !important;
+    .ui {
+      .item {
+        .content {
+          .custom {
+            &.header { 
+              padding-top: 0.6em !important;
+              font-size: 4.5em !important;
+              font-weight: 500 !important;
+              text-decoration: none;
+            }
+          }
+
+          .sub {
+            &.header {
+              color : @vw_white !important;
+              margin-top: 1em !important;
+              padding: 0 !important;
+              font-weight: 600;
+            }
+          }
+        }
+        &:nth-child(1) {
+          .content {
+            .custom {
+              &.header {
+                .transition(all 0.5s);
+
+                color: @vw_pink !important;
+                font-family: Monoton !important;
+                .animation(none);         
+                
+                &:hover {
+                  color: @vw_white !important;
+                  .glow-keyframes(neon11; @vw_pink);
+                  .animation(neon11 1.5s ease-in-out infinite alternate);
+                }
+              }
+            }
+          }
+        } 
+        &:nth-child(2) {
+          .content {
+            .custom {
+              &.header {
+                .transition(all 0.5s);
+                padding-top: 0.4em !important;
+                font-size: 6.5em !important;
+                color: @vw_light_blue !important;
+                font-family: Iceland !important;
+                .animation(none);         
+                
+                &:hover {
+                  color: @vw_white !important; 
+                  .glow-keyframes(neon12; @vw_light_blue);
+                  .animation(neon12 1.5s ease-in-out infinite alternate);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          .content {
+            .custom {
+              &.header {
+                .transition(all 0.5s);
+
+                color: @vw_yellow !important;
+                font-family: Pacifico !important;
+                .animation(none);         
+                
+                &:hover {
+                  color: @vw_white !important;
+                  .glow-keyframes(neon13; @vw_yellow);
+                  .animation(neon13 1.5s ease-in-out infinite alternate);
+                }
+              }
+            }  
+          }
+        }
+        &:nth-child(4) {
+          .content {
+            .custom {
+              &.header {
+                .transition(all 0.5s);
+
+                font-size: 3.5em !important;
+                color: @vw_green !important;
+                font-family: "Press Start 2P" !important;
+                .animation(none);         
+                
+                &:hover {
+                  color: @vw_white !important;
+
+                  .glow-keyframes(neon14; @vw_green);
+                  .animation(neon14 1.5s ease-in-out infinite alternate);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(5) {
+          .content {
+            .custom {
+              &.header {
+                .transition(all 0.5s);
+
+                padding-top: 0.5em !important;
+                color: @vw_orange !important;
+                font-family: Audiowide !important;
+                .animation(none);         
+                
+                &:hover {
+                  color: @vw_white !important;              
+                  .glow-keyframes(neon15; @vw_orange);
+                  .animation(neon15 1.5s ease-in-out infinite alternate);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(6) {
+          .content {
+            .custom {
+              &.header {
+                .transition(all 0.5s);
+
+                padding-top: 0.5em !important;
+                color: @vw_violet !important;
+                font-family: Vampiro One !important;
+                .animation(none);         
+                
+                &:hover {
+                  color: @vw_white !important;              
+                  .glow-keyframes(neon16; @vw_violet);
+                  .animation(neon16 1.5s ease-in-out infinite alternate);
+                }
+              }
+            }
+          }
+        }                                              
+      }
+    }
+  }
+}
+
+#leaderboardTable {
+    table {
+      -webkit-border-radius: 0px !important;
+         -moz-border-radius: 0px !important;
+              border-radius: 0px !important;
+              border: 0px !important;
+      th {
+          background-color: @vw_pink !important;
+          -webkit-border-radius: 0px !important;
+             -moz-border-radius: 0px !important;
+                  border-radius: 0px !important; 
+          border-left: 0px !important;
+          border-right: 0px !important;
+          border-bottom: 3px solid @vw_purple; 
+          color: @vw_white;
+          font-size: 1.2em !important;
+          padding-left: 1em !important;
+        }
+
+      td {
+        font-size: 1.2em !important;
+        font-weight: 500 !important;
+        background-color: @vw_grey2;
+        color: @vw_white;
+
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+
+        }
+      
+      tr:nth-child(1) td {
+        .glow-keyframes(neon1; @vw_gold);
+        .animation(neon1 1.5s ease-in-out infinite alternate);
+        &:hover {
+          color: @vw_gold !important;
+          .animation(none);         
+        }
+      }
+      tr:nth-child(2) td {
+        .glow-keyframes(neon2; @vw_silver);
+        .animation(neon2 1.5s ease-in-out infinite alternate);
+        &:hover {
+          color: @vw_silver !important;
+          .animation(none);         
+        }
+      } 
+      tr:nth-child(3) td {
+        .glow-keyframes(neon3; @vw_bronze);
+        .animation(neon3 1.5s ease-in-out infinite alternate);
+        &:hover {
+          color: @vw_bronze !important;
+          .animation(none);         
+        }
+      }              
+    }
+}
+
+.turret {
+  animation: float 4s ease-in-out infinite;
+
+}
+
+.turret_f {
+  animation: float_f 4s ease-in-out infinite;
+}
+
+
+
+#contact_panel {
+  margin-top: 11em;
+  .header {
+    margin-top: 2em !important;
+  }
+  .ui {
+    &.text {
+      &.container {
+        background-color: @vw_pink;
+        padding-bottom: 1em;
+        border: 1px solid @vw_pink2;    
+        .glow-keyframe3(neon18; @vw_pink);
+        .animation(neon18 2.5s ease-in-out infinite alternate);  
+      }
+    }
+  }
+}
+
+#contact_form_input {
+  padding-right: 2em;
+  padding-left: 2em;
+  .textarea {
+    -webkit-box-shadow: 0 0 0 2px #fff inset!important;
+    box-shadow: 0 0 0 2px #fff inset!important;
+  }
+}
+
+.slow_glow {
+  .glow-keyframe3(neon19; @vw_pink,1);
+  .animation(neon19 2s ease-in-out infinite alternate);    
+}
+
+
+//----------------------------------------------------------------------//
+//-------------------------ANIMATION------------------------------------//
+//----------------------------------------------------------------------//
+
+
+.glow-keyframes(@name, @neon_color) {
+  .keyframes (@name; {
+    0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @neon_color, 0 0 70px @neon_color, 0 0 80px @neon_color, 0 0 100px @neon_color, 0 0 150px @neon_color;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px @neon_color, 0 0 35px @neon_color, 0 0 40px @neon_color, 0 0 50px @neon_color, 0 0 75px @neon_color;
+    }    
+  });
+}
+
+.glow-keyframe2(@name, @neon_color) {
+  .keyframes (@name; {
+    0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @neon_color, 0 0 70px @neon_color, 0 0 80px @neon_color, 0 0 100px @neon_color, 0 0 150px @neon_color;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px @neon_color, 0 0 35px @neon_color, 0 0 40px @neon_color, 0 0 50px @neon_color, 0 0 75px @neon_color;
+    }  
+  });
+}
+
+
+.glow-keyframe3(@name, @neon_color) {
+  .keyframes (@name; {
+    0% {
+      filter: drop-shadow(0 0 2px #fff)
+              drop-shadow(0 0 5px  #fff)
+              drop-shadow(0 0 20px  @neon_color)
+              drop-shadow(0 0 38px  @neon_color);
+      -webkit-filter: drop-shadow(0 0 2px  #fff)
+              drop-shadow(0 0 5px  #fff)
+              drop-shadow(0 0 20px  @neon_color)
+              drop-shadow(0 0 38px  @neon_color);             
+    }
+    100% {
+      filter: drop-shadow(0 0 1px  #fff)
+              drop-shadow(0 0 2px  #fff)
+              drop-shadow(0 0 5px  @neon_color)
+              drop-shadow(0 0 13px  @neon_color);
+      -webkit-filter: drop-shadow(0 0 1px  #fff)
+              drop-shadow(0 0 2px  #fff)
+              drop-shadow(0 0 5px  @neon_color)
+              drop-shadow(0 0 13px  @neon_color);         
+    }  
+  });
+}
+
+@keyframes float {
+  0% {
+    filter: drop-shadow(0 0 12px @vw_pink);
+/*    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);
+    -webkit-filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);*/
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0 0 1px @vw_pink);
+/*    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 3px @vw_pink)
+            drop-shadow(0 0 4px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 7px @vw_pink);
+    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 3px @vw_pink)
+            drop-shadow(0 0 4px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 7px @vw_pink);*/
+    transform: translatey(-20px);
+  }
+  100% {
+    filter: drop-shadow(0 0 12px @vw_pink); 
+/*    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);
+    -webkit-filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);*/
+    transform: translatey(0px);
+  }
+}
+
+
+@keyframes float_f {
+  0% {
+    filter: drop-shadow(0 0 12px @vw_pink);
+/*    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);
+    -webkit-filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);*/
+    transform: scaleX(-1) translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0 0 1px @vw_pink);
+/*    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 3px @vw_pink)
+            drop-shadow(0 0 4px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 7px @vw_pink);
+    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 3px @vw_pink)
+            drop-shadow(0 0 4px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 7px @vw_pink);*/
+    transform: scaleX(-1) translatey(-20px);
+  }
+  100% {
+    filter: drop-shadow(0 0 12px @vw_pink); 
+/*    filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);
+    -webkit-filter: drop-shadow(0 0 2px @vw_pink)
+            drop-shadow(0 0 5px @vw_pink)
+            drop-shadow(0 0 6px @vw_pink)
+            drop-shadow(0 0 8px @vw_pink)
+            drop-shadow(0 0 12px @vw_pink);*/
+    transform: scaleX(-1) translatey(0px);
+  }
+}
+
+.keyframes(@name; @arguments) {
+  @-moz-keyframes @name { @arguments(); }
+  @-webkit-keyframes @name { @arguments(); }
+  @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  animation: @arguments;
+}
+
+.transition(@arguments) {
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    transition: @arguments;  
+}
+
+.shadow (@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;  
+}
+
+.filter (@arguments) {
+
+}
+
+
+.special-button {
+  min-height: 50px !important;
+  border: 5px solid transparent !important;
+  background: @vw_pink !important;
+  color: #FFF !important;
+  border-radius: 3px !important;
+  min-width: 200px !important;
+
+      &:hover {
+      filter: drop-shadow(0 0 2px #fff)
+              drop-shadow(0 0 5px  #fff)
+              drop-shadow(0 0 20px  @vw_pink)
+              drop-shadow(0 0 38px  @vw_pink);
+      -webkit-filter: drop-shadow(0 0 2px  #fff)
+              drop-shadow(0 0 5px  #fff)
+              drop-shadow(0 0 20px  @vw_pink)
+              drop-shadow(0 0 38px  @vw_pink);  
+      }  
+  }  

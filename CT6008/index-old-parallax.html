@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+		<script
+		  src="js/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+		<script src="semantic/dist/semantic.min.js"></script>	
+		<script type="text/javascript">
+			//CODE FOR second pop-up fixed menu when scorlling past first section
+			$(document).ready(function() {
+			  // fix menu when passed
+			  $('.parallax-container')
+			    .visibility({
+			      once: false,
+			      onBottomPassed: function() {
+			        $('.fixed.menu').transition('fade in');
+			      },
+			      onBottomPassedReverse: function() {
+			        $('.fixed.menu').transition('fade out');
+			      }
+			    });
+			  // create sidebar and attach to menu open
+			  $('.ui.sidebar').sidebar('attach events', '.toc.item');
+			});	
+		</script>
+
+	</head>
+	<body>
+	  <div class="ui page overlay dimmer">
+	    <div class="ui large text loader">Loading</div>
+	  </div>
+	<script type="text/javascript">
+	$('.dimmer').dimmer('show');
+		window.onload = function () {
+			$('.dimmer').dimmer('hide');
+		}
+	</script>	  
+
+	<!-- Following Menu -->
+	<div class="ui large top fixed hidden inverted menu">
+	  <div class="ui container">
+	    <a class="active item" href="index.html">Home</a>
+	    <a class="item">Mechanics</a>
+	    <a class="item" href="team.html">Team</a>
+	    <a class="item">Contact</a>
+	    <div class="right menu">
+	      <div class="item">
+	        <a class="ui inverted button" href="leaderboard.html">Leaderboards</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="pusher">	
+		<div id="top-menu" class="ui large secondary inverted pointing menu">
+		  <div class="ui container">	
+		    <a class="active item" href="index.html">Home</a>
+		    <a class="item">Mechanics</a>
+		    <a class="item" href="team.html">Team</a>
+		    <a class="item">Contact</a>
+		    <div class="right menu">
+		    	<div class="item">
+		    		<div class="ui inverted button"><a href="leaderboard.html">Leaderboards</a></div>
+		    	</div>
+		    </div>
+		  </div>
+		</div>	
+		<div class="parallax-container">
+<!-- 		    <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
+		    <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
+		    <div class="parallax-layer layer-2" data-parallax-speed="0.1" data-max-scroll="565"></div>
+		    <div class="parallax-layer layer-3" data-parallax-speed="0.2" data-max-scroll="565"></div>
+		    <div class="parallax-layer layer-4" data-parallax-speed="0.3" data-max-scroll="565"></div>
+		    <div class="parallax-layer layer-5" data-parallax-speed="0.4" data-max-scroll="565"></div>
+		    <div class="parallax-layer layer-6" data-parallax-speed="0.5" data-max-scroll="565"></div>	 -->	
+
+
+
+	<!-- 	    <div class="parallax-layer layer-11d" data-parallax-speed="0.1" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-11c" data-parallax-speed="0.13" data-max-scroll="800"></div>	   
+		    <div class="parallax-layer layer-10d" data-parallax-speed="0.15" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-10c" data-parallax-speed="0.18" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-9d" data-parallax-speed="0.2" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-9c" data-parallax-speed="0.23" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-8d" data-parallax-speed="0.25" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-8c" data-parallax-speed="0.28" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-7d" data-parallax-speed="0.3" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-7c" data-parallax-speed="0.33" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-6d" data-parallax-speed="0.35" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-6c" data-parallax-speed="0.38" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-5d" data-parallax-speed="0.4" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-5c" data-parallax-speed="0.43" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-4d" data-parallax-speed="0.45" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-4c" data-parallax-speed="0.48" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-3d" data-parallax-speed="0.5" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-3c" data-parallax-speed="0.53" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-2d" data-parallax-speed="0.55" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-2c" data-parallax-speed="0.58" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-1d" data-parallax-speed="0.6" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-1c" data-parallax-speed="0.63" data-max-scroll="800"></div>		    		    
+		    <div class="parallax-layer layer-12b" data-parallax-speed="0.65" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-12" data-parallax-speed="0.68" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-11b" data-parallax-speed="0.7" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-11" data-parallax-speed="0.73" data-max-scroll="800"></div>	   
+		    <div class="parallax-layer layer-10b" data-parallax-speed="0.75" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-10" data-parallax-speed="0.8" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-9b" data-parallax-speed="0.83" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-9" data-parallax-speed="0.85" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-8b" data-parallax-speed="0.88" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-8" data-parallax-speed="0.9" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-7b" data-parallax-speed="0.93" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-7" data-parallax-speed="0.95" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-6b" data-parallax-speed="0.98" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-6" data-parallax-speed="1.0" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-5b" data-parallax-speed="1.03" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-5" data-parallax-speed="1.05" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-4b" data-parallax-speed="1.08" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-4" data-parallax-speed="1.1" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-3b" data-parallax-speed="1.13" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-3" data-parallax-speed="1.15" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-2b" data-parallax-speed="1.18" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-2" data-parallax-speed="1.2" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-1b" data-parallax-speed="1.23" data-max-scroll="800"></div>
+		    <div class="parallax-layer layer-1" data-parallax-speed="1.25" data-max-scroll="800"> --></div>
+		</div>
+
+
+		<div id="first-panel" class="ui inverted vertical masthead center aligned segment">
+
+			<div class="ui text container">
+		    	<h1 class="ui inverted">
+		    		Available now on Steam for <span style="color:#FF1493 !important">FREE</span>
+		    	</h1>
+		    	<br>
+	    		<div class="row">
+	    			<div class="ui huge vw_pink button">Download now   <i class="download icon"></i></div>
+	    		</div>
+	    		<br>
+<video width="640" height="480" controls>
+  <source src="img/trailer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>	    		
+    			<!-- <div class="ui embed" data-url="https://www.youtube.com/embed/vU26YipjcUU" data-placeholder=""></div> -->
+			</div>
+			
+		</div>
+		<div class="ui vertical stripe segment" id="headsetAndGun">
+		    <div class="ui middle aligned stackable grid container">
+		    	<div class="row">
+					<div class="ui two column centered stackable grid">
+						<div class="row">
+						  <div class="column"><img src="img/game-1.png"></div>
+						  <div class="column"><img src="img/game-2.png"></div>
+						</div>	
+						<div class="two row">
+						  <div class="column"><img src="img/game-3.png"></div>
+						  <div class="column"><img src="img/game-4.png"></div>
+						</div>	
+					</div>				      
+		    	</div>
+			</div>
+		</div>
+		<div class="ui vertical stripe segment">
+		    <div class="ui middle aligned stackable grid container">
+		    	<div class="row">
+		    		<div class="ui text container">
+				      <h1 class="ui header">
+				        VR Headset and Gun
+				      </h1>
+						<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/910be433ccf447dcb54afee54d32f8b3/embed?autospin=0.2&amp;autostart=1&amp;camera=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe></div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script src="js/parallax.js"></script>
+</html>
