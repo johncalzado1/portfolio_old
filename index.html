@@ -29,12 +29,18 @@
 							<h3 class="ui header">Want to be notifed when upgrade complete?</h3>
 							<form class="ui form">
 								<div class="field">
-									<input type="text" name="email" placeholder="email">
+									<input id="email_inp" type="text" name="email" placeholder="email">
 								</div>
-								<div class="ui success message">
-								    <div class="header">Form Completed</div>
-								    <p>Thanks for the interest, you shall be emailed when the site upgrade is completed.</p>
-								</div>									
+								<div class="ui success message hidden">
+									<i class="close icon"></i>
+								    <div class="header">Thanks for the interest, I'll let you know when the upgrade is completed.</div>
+								</div>
+								<div class="ui negative message hidden">
+									<i class="close icon"></i>
+									<div class="header">
+										An error occured.
+									</div>
+								</div>																	
 								<div class="ui grid">
 									<div class="two column row">
 										<div class="right floated right aligned column">
