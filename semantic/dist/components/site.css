@@ -202,6 +202,9 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
          Site Overrides
 *******************************/
 
+body {
+  background-color: #fbc531;
+}
 .wrapper {
   padding: 0;
   margin: 0;
@@ -209,4 +212,21 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   height: 100%;
   min-width: 100%;
   width: 100%;
+}
+.wrapper .grid {
+  min-height: 100% !important;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.button {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #2f3640 !important;
+}
+.custom_lrg {
+  font-size: 4rem !important;
 }

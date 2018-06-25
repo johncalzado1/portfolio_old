@@ -1,6 +1,10 @@
 /*******************************
          Site Overrides
 *******************************/
+body {
+	background-color: @yellow;
+}
+
 .wrapper {
 	padding: 0;
 	margin: 0;
@@ -8,4 +12,18 @@
 	height: 100%;
 	min-width: 100%;
 	width: 100%;
+	
+	.grid {
+		min-height: 100% !important;
+	}
+}
+
+
+p, h1, h2, h3, h4, h5, h6, .button{
+	font-family: 'Montserrat', sans-serif !important;
+	color: @black !important;
+}
+
+.custom_lrg {
+	font-size: 4rem !important;
 }
