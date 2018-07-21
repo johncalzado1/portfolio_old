@@ -2,7 +2,7 @@
          Site Overrides
 *******************************/
 body {
-	background-color: @yellow;
+	background: repeating-linear-gradient(    -45deg,    @black_bckgnd,    @black_bckgnd 3px,    #333 5px,    #333 20px  );
 }
 
 .wrapper {
@@ -21,7 +21,7 @@ body {
 
 p, h1, h2, h3, h4, h5, h6, .button{
 	font-family: 'Montserrat', sans-serif !important;
-	color: @black !important;
+	color: @white !important;
 }
 
 .custom_lrg {

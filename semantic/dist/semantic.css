@@ -761,7 +761,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 
 body {
-  background-color: #fbc531;
+  background: -webkit-repeating-linear-gradient(135deg, #1F2023, #1F2023 3px, #333 5px, #333 20px);
+  background: repeating-linear-gradient(-45deg, #1F2023, #1F2023 3px, #333 5px, #333 20px);
 }
 
 .wrapper {
@@ -786,7 +787,7 @@ h5,
 h6,
 .button {
   font-family: 'Montserrat', sans-serif !important;
-  color: #2f3640 !important;
+  color: #f5f6fa !important;
 }
 
 .custom_lrg {
