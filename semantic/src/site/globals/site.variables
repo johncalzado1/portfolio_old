@@ -10,3 +10,5 @@
 @black	: #2f3640;
 @black2 : #353b48;
 @black_bckgnd : #1F2023;
+@anchor: #2e86de;
+@anchor_hover: #54a0ff;
