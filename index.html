@@ -21,9 +21,9 @@
 		<script src="js/firebase.js"></script>
 		<script type="text/javascript" src="js/typewriter.js"></script>
 	</head>
-	<body>
+	<body class="">
 		<div id="fullpage">
-			<div class="section bck_black">
+			<div class="section">
 				<div class="ui container wrapper">
 					<div class="ui home-one center aligned stackable very relaxed page grid">
 						<div class="computer only row"></div>
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="section bck_grey"></div>
+			<div class="section"></div>
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -79,8 +79,35 @@
 					licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 					autoScrolling:true,
 					navigation: true,
+					onLeave: function(origin, destination, direction){
+						var leavingSection = this;
+							console.log(origin);
+							console.log(direction);
+							console.log(destination);
+					}					
 				});
 			});			
-		</script>		
+		</script>	
+		<style type="text/css">
+			/* The animation code */
+			@keyframes example {
+				from {
+					background-size: 100%;
+				}
+				to {
+					background-size: 200%;
+				}
+			}
+
+			/* The element to apply the animation to */
+			body {
+				position: relative;
+  				overflow: hidden;
+			    background: repeating-linear-gradient(-45deg,rgba(31, 32, 35, 0.9),rgba(31, 32, 35, 0.9) 1px,rgba(51, 51, 51, 0.9) 2px,rgba(51, 51, 51, 0.8) 5px);	
+			    background-size: cover;
+				animation: example 3s ease infinite alternate;
+				background-size: 150% 100%;
+			}			
+		</style>	
 	</body>
 </html>
