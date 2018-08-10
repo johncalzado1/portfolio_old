@@ -12,3 +12,24 @@
 @black_bckgnd : #1F2023;
 @anchor: #2e86de;
 @anchor_hover: #54a0ff;
+
+// Repeating gradient different patterns and color
+.bck_black() {
+	background: repeating-linear-gradient(-45deg,rgba(31, 32, 35, 0.9),rgba(31, 32, 35, 0.9) 1px,rgba(51, 51, 51, 0.9) 2px,rgba(51, 51, 51, 0.8) 5px) !important;	
+}
+
+.bck_cyan() {
+	background: repeating-linear-gradient(45deg,rgba(29, 209, 161, 0.82),rgb(29, 209, 161) 1px,rgba(16, 172, 132, 0.6) 2px,rgba(16, 172, 132, 0.8901960784313725) 5px) !important;
+}
+
+.bck_cyan_two() {
+	background: repeating-linear-gradient(45deg,rgba(29, 209, 161, 0.82),rgb(29, 209, 161) 1px,rgba(16, 172, 132, 0.6) 2px,rgba(16, 172, 132, 0.8901960784313725) 20px) !important;
+}
+
+.bck_red() {
+	background: repeating-linear-gradient(45deg,rgba(255, 107, 107, 0.82),rgba(255, 107, 107, 0.8509803921568627) 1px,rgba(238, 82, 83, 0.81) 2px,rgba(238, 82, 83, 0.78) 8px) !important;	
+}
+
+.bck_grey() {
+	background: repeating-linear-gradient(45deg,rgba(200, 214, 229, 0.96),rgba(200, 214, 229, 0.92) 1px,rgba(131, 149, 167, 0.7) 5px,rgba(131, 149, 167, 0.74) 5px) !important;
+}
