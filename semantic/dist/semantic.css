@@ -848,6 +848,66 @@ a:hover {
     opacity: 0;
   }
 }
+
+.back-black-in {
+  position: relative;
+}
+
+.back-black-in * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.back-black-in:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: -webkit-repeating-linear-gradient(135deg, rgba(31, 32, 35, 0.9), rgba(31, 32, 35, 0.9) 1px, rgba(51, 51, 51, 0.9) 2px, rgba(51, 51, 51, 0.8) 5px) !important;
+  background: repeating-linear-gradient(-45deg, rgba(31, 32, 35, 0.9), rgba(31, 32, 35, 0.9) 1px, rgba(51, 51, 51, 0.9) 2px, rgba(51, 51, 51, 0.8) 5px) !important;
+  -webkit-animation: fadein 1s ease-in 0.2s;
+  animation: fadein 1s ease-in 0.2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.back-black-in * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.back-black-out {
+  position: relative;
+}
+
+.back-black-out * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.back-black-out:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: -webkit-repeating-linear-gradient(135deg, rgba(31, 32, 35, 0.9), rgba(31, 32, 35, 0.9) 1px, rgba(51, 51, 51, 0.9) 2px, rgba(51, 51, 51, 0.8) 5px) !important;
+  background: repeating-linear-gradient(-45deg, rgba(31, 32, 35, 0.9), rgba(31, 32, 35, 0.9) 1px, rgba(51, 51, 51, 0.9) 2px, rgba(51, 51, 51, 0.8) 5px) !important;
+  -webkit-animation: fadeout 1s ease-in 0.2s;
+  animation: fadeout 1s ease-in 0.2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.back-black-out * {
+  position: relative !important;
+  z-index: 2 !important;
+}
 /*!
  * # Semantic UI 2.3.1 - Button
  * http://github.com/semantic-org/semantic-ui/
