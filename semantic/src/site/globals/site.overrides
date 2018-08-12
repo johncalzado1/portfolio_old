@@ -121,8 +121,9 @@ a {
 			&:after {
 				.back_before();
 				.bck_black();
-				animation: fadeout 1s ease-in 0.2s;
-				animation-iteration-count: 1;				
+				animation: fadeout 2s ease 1s infinite alternate;
+				animation-iteration-count: 1;
+				background-size: 200% 200%;					
 			}
 		} 
 
