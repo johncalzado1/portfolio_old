@@ -52,8 +52,8 @@
 		</style>		
 	</head>
 	<body class="">
-		<div class="bck-panel-1"></div>
-		<div class="bck-panel-2"></div>
+		<div class="bck-panel-1 bck_black_2"></div>
+		<div class="bck-panel-2 bck_red_2"></div>
 		<div id="fullpage">
 			<div class="section">
 				<div class="ui container wrapper">
@@ -103,10 +103,17 @@
 				</div>
 			</div>
 			<div class="section"></div>
+			<div class="section"></div>
+			<div class="section"></div>
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				new fullpage('#fullpage', {
+
+					//SETUP data attributes for each section with their assigned background pattern
+					//every time user scroll, the attribute of background pattern is passed to the onLeave call back
+					//to sort animation between origin section (section we came from) and destination section
+
 					//options here
 					licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 					autoScrolling:true,
@@ -116,6 +123,13 @@
 							console.log(origin);
 							console.log(direction);
 							console.log(destination);
+							$('.bck-panel-2')
+							  .transition('fade up');
+							$('.bck-panel-1')
+							  .transition('fade left');							
+					},
+					afterRender: function () {
+						$('.bck-panel-1').transition('fade');							
 					}					
 				});
 			});		

@@ -55,6 +55,10 @@ a {
 	background: repeating-linear-gradient(-45deg,rgba(31, 32, 35, 0.9),rgba(31, 32, 35, 0.9) 1px,rgba(51, 51, 51, 0.9) 2px,rgba(51, 51, 51, 0.8) 5px);	
 }
 
+.bck_black_2() {
+	background: repeating-linear-gradient(-45deg,rgba(31, 32, 35, 0.2),rgba(31, 32, 35, 0.58) 15px,rgb(51, 51, 51) 15px,rgb(51, 51, 51) 30px);
+}
+
 .bck_cyan() {
 	background: repeating-linear-gradient(45deg,rgba(29, 209, 161, 0.82),rgb(29, 209, 161) 1px,rgba(16, 172, 132, 0.6) 2px,rgba(16, 172, 132, 0.8901960784313725) 5px);
 }
@@ -67,7 +71,40 @@ a {
 	background: repeating-linear-gradient(45deg,rgba(255, 107, 107, 0.82),rgba(255, 107, 107, 0.8509803921568627) 1px,rgba(238, 82, 83, 0.81) 2px,rgba(238, 82, 83, 0.78) 8px);	
 }
 
+.bck_red_2() {
+	background: repeating-linear-gradient(45deg,rgb(255, 107, 107),rgb(255, 107, 107) 30px,rgba(238, 82, 83, 0.15) 30px,rgba(238, 82, 83, 0.32) 60px);	
+}
+
 .bck_grey() {
+	background: repeating-linear-gradient(45deg,rgba(200, 214, 229, 0.96),rgba(200, 214, 229, 0.92) 1px,rgba(131, 149, 167, 0.7) 5px,rgba(131, 149, 167, 0.74) 5px);
+}
+
+//Classes
+.bck_black {
+	background: repeating-linear-gradient(-45deg,rgba(31, 32, 35, 0.9),rgba(31, 32, 35, 0.9) 1px,rgba(51, 51, 51, 0.9) 2px,rgba(51, 51, 51, 0.8) 5px);	
+}
+
+.bck_black_2 {
+	background: repeating-linear-gradient(-45deg,rgba(31, 32, 35, 0.2),rgba(31, 32, 35, 0.58) 15px,rgb(51, 51, 51) 15px,rgb(51, 51, 51) 30px);
+}
+
+.bck_cyan {
+	background: repeating-linear-gradient(45deg,rgba(29, 209, 161, 0.82),rgb(29, 209, 161) 1px,rgba(16, 172, 132, 0.6) 2px,rgba(16, 172, 132, 0.8901960784313725) 5px);
+}
+
+.bck_cyan_two {
+	background: repeating-linear-gradient(45deg,rgba(29, 209, 161, 0.82),rgb(29, 209, 161) 1px,rgba(16, 172, 132, 0.6) 2px,rgba(16, 172, 132, 0.8901960784313725) 20px);
+}
+
+.bck_red {
+	background: repeating-linear-gradient(45deg,rgba(255, 107, 107, 0.82),rgba(255, 107, 107, 0.8509803921568627) 1px,rgba(238, 82, 83, 0.81) 2px,rgba(238, 82, 83, 0.78) 8px);	
+}
+
+.bck_red_2 {
+	background: repeating-linear-gradient(45deg,#ff6b6b,#ff6b6b 30px,rgba(238, 82, 83, 0.59) 30px,rgba(238,82,83,.32) 60px);
+}
+
+.bck_grey {
 	background: repeating-linear-gradient(45deg,rgba(200, 214, 229, 0.96),rgba(200, 214, 229, 0.92) 1px,rgba(131, 149, 167, 0.7) 5px,rgba(131, 149, 167, 0.74) 5px);
 }
 
@@ -164,11 +201,10 @@ a {
 .bck-panel {
 	&-1 {
 		.bck-panel-main();
-		.bck_black();
 	}
 
 	&-2 {
 		.bck-panel-main();
-		.bck_red();
+
 	}
 }
