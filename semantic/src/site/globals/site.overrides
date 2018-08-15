@@ -198,7 +198,7 @@ a {
 	background-repeat: repeat;
 }
 
-.bck-panel {
+#bck-panel {
 	&-1 {
 		.bck-panel-main();
 	}

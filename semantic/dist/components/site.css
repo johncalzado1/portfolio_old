@@ -352,7 +352,7 @@ a:hover {
           animation-iteration-count: 1;
   background-size: 200% 200%;
 }
-.bck-panel-1 {
+#bck-panel-1 {
   position: fixed;
   height: 100%;
   min-height: 100%;
@@ -365,7 +365,7 @@ a:hover {
   background-size: 200% 200%;
   background-repeat: repeat;
 }
-.bck-panel-2 {
+#bck-panel-2 {
   position: fixed;
   height: 100%;
   min-height: 100%;
