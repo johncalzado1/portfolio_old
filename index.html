@@ -125,20 +125,33 @@
 							console.log(destination);
 
 							var bck_class_org = origin.item.dataset.bck_col_class;
-							var bck_class_dest = destination.item.dataset.bck_col_class;
+							var bck_class_dest = destination.item.dataset.bck_col_class;					
 
-							if ($('#bck-panel-1').hasClass(bck_class_org) == false) {
+							//if panel 1 is visible
+							if ($('#bck-panel-1').transition('is visible') == true) {
+								//turn off panel 1
+								//turn on panel 2
 								$('#bck-panel-1').removeClass();
-								$('#bck-panel-1').addClass(bck_class_org);
-							} 
-
-							if ($('#bck-panel-2').hasClass(bck_class_dest) == false) {
-								$('#bck-panel-2').removeClass();
 								$('#bck-panel-2').addClass(bck_class_dest);
-							}							
+								console.log("remove panel 1. Assign to panel 2: ");
+								console.log(bck_class_dest);
+							} else {
+								//turn off panel 2
+								//turn on panel 1
+								$('#bck-panel-2').removeClass();
+								$('#bck-panel-1').addClass(bck_class_dest);
+								console.log("remove panel 2. Assign to panel 1: ");
+								console.log(bck_class_dest);
+							}
 
-							$('#bck-panel-2').transition('fade up');
-							$('#bck-panel-1').transition('fade left');							
+							var randomizeAnimation = function () {
+								var animations = ["fade", "fade up", "fade left", "fade right", "fade down"];
+								return animations[Math.floor(Math.random() * animations.length)];
+							};
+
+
+							$('#bck-panel-2').transition(randomizeAnimation());
+							$('#bck-panel-1').transition(randomizeAnimation());							
 					},
 					afterRender: function () {
 						$('#bck-panel-1').removeClass();
@@ -149,7 +162,7 @@
 						$('#bck-panel-1').addClass(bck_class);
 						$('#bck-panel-2').addClass(bck_class2);
 
-						$('#bck-panel-1').transition('fade');							
+						$('#bck-panel-2').transition('fade');							
 					}					
 				});
 			});		
